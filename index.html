@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-        let myNumber = 10;
+        let myNumber = 10; //initializing the variables and their values
 let myString = "Hello JavaScript!"
 
 console.log(myNumber);
 console.log(myString);
 
-for (i=1; i<=myNumber; i++){
+for (i=1; i<=myNumber; i++){ //using for loop to iterate from 0 to 10 and i++ to increment by +1 
     console.log(i);
 }
 
@@ -22,20 +22,21 @@ for (i=1; i<=5; i++){
 }
 
 
-let num1 = prompt("Enter the first number:");
+let num1 = prompt("Enter the first number:"); //using prompt to take input from the user
 let num2 = prompt("Enter the second number:");
 
-num1 = parseFloat(num1);
+num1 = parseFloat(num1); //converting the string input to float data type
 num2 = parseFloat(num2);
 
 function addNumbers(num1, num2) {
-    return num1 + num2;
+    return num1 + num2; //returning the sum of num1 and num2
 }
 
 function multiplyNumbers(num1, num2) {
-    return num1 * num2;
+    return num1 * num2; //returning the product of num1 and num2
 }
 
+        //calling both the functions and printing their values which we returned
 console.log("Sum of these two numbers is:", addNumbers(num1, num2));
 console.log("Product of these two numbers is:", multiplyNumbers(num1, num2));
 
